@@ -1,5 +1,5 @@
 <?php
-namespace Jcf\Geocode\Exceptions;
+namespace Vdvcoder\Geocode\Exceptions;
 
 class EmptyArgumentsException extends \Exception
 {

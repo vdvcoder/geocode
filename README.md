@@ -23,12 +23,12 @@ Both the service provider and alias will be automatically installed by Laravel 5
 After updating composer, add the service provider to the providers array in app/config/app.php
 
 ```php
-Jcf\Geocode\GeocodeServiceProvider::class,
+Vdvcoder\Geocode\GeocodeServiceProvider::class,
 ```
 Add then alias Geocode adding its facade to the aliases array in the same file :
 
 ```php
-'Geocode' => Jcf\Geocode\Facades\Geocode::class,
+'Geocode' => Vdvcoder\Geocode\Facades\Geocode::class,
 ```
 
 ### Laravel 4
@@ -36,12 +36,12 @@ Add then alias Geocode adding its facade to the aliases array in the same file :
 After updating composer, add the service provider to the providers array in app/config/app.php
 
 ```php
-'Jcf\Geocode\GeocodeServiceProvider',
+'Vdvcoder\Geocode\GeocodeServiceProvider',
 ```
 Add then alias Geocode adding its facade to the aliases array in the same file :
 
 ```php
-'Geocode' => 'Jcf\Geocode\Facades\Geocode'
+'Geocode' => 'Vdvcoder\Geocode\Facades\Geocode'
 ```
 
 ### Lumen 5
@@ -49,13 +49,13 @@ Add then alias Geocode adding its facade to the aliases array in the same file :
 After updating composer, register the service provider in bootstrap/app.php
 
 ```php
-$app->register(Jcf\Geocode\GeocodeServiceProvider::class);
+$app->register(Vdvcoder\Geocode\GeocodeServiceProvider::class);
 ```
 
 Since facade are not enabled by default on Lumen, don't forget to add this.
 
 ```php
-use Jcf\Geocode\Geocode;
+use Vdvcoder\Geocode\Geocode;
 
 ```
 

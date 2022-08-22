@@ -1,4 +1,4 @@
-<?php namespace Jcf\Geocode;
+<?php namespace Vdvcoder\Geocode;
 
 use Illuminate\Support\ServiceProvider;
 

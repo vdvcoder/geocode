@@ -1,5 +1,5 @@
-<?php 
-namespace Jcf\Geocode;
+<?php
+namespace Vdvcoder\Geocode;
 
 class Response
 {
@@ -32,7 +32,7 @@ class Response
 	{
 		return $this->response->geometry->location_type;
 	}
-	
+
 	public function postalCode()
     	{
 		foreach ($this->response->address_components as $component) {

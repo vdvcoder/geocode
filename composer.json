@@ -1,12 +1,12 @@
 {
-    "name": "jcf/geocode",
+    "name": "vdvcoder/geocode",
     "description": "Google Geocoding API for Laravel",
     "keywords": ["laravel", "google", "geocode", "geocoding", "address", "latitude", "longitude", "api"],
     "license": "MIT",
     "authors": [
         {
-            "name": "João Carlos",
-            "email": "jotacfurtado@gmail.com"
+            "name": "Van de Velde Olivier",
+            "email": "olivier@bulletpoint.be"
         }
     ],
     "require": {
@@ -22,10 +22,10 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Jcf\\Geocode\\GeocodeServiceProvider"
+                "Vdvcoder\\Geocode\\GeocodeServiceProvider"
             ],
             "aliases": {
-                "Geocode": "Jcf\\Geocode\\Facades\\Geocode"
+                "Geocode": "Vdvcoder\\Geocode\\Facades\\Geocode"
             }
         }
     }
