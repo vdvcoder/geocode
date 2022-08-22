@@ -1,4 +1,6 @@
-<?php namespace Vdvcoder\Geocode;
+<?php
+
+namespace Vdvcoder\Geocode;
 
 use Illuminate\Support\ServiceProvider;
 
@@ -36,14 +38,14 @@ class GeocodeServiceProvider extends ServiceProvider {
 	{
 	    $this->app->singleton('geocode',function($app)
 	    {
-	        return new \Jcf\Geocode\Geocode;
+	        return new \Vdvcoder\Geocode\Geocode;
 	    });
 
 	    if ($this->app instanceof LaravelApplication) {
 	        $this->app->booting(function ()
 	        {
 		    $loader = \Illuminate\Foundation\AliasLoader::getInstance();
-		    $loader->alias('Geocode', 'Jcf\Geocode\Facades\Geocode');
+		    $loader->alias('Geocode', 'Vdvcoder\Geocode\Facades\Geocode');
 	        });
 	    }
 	}

@@ -15,7 +15,7 @@
     },
     "autoload": {
         "psr-0": {
-            "Jcf\\Geocode": "src/"
+            "Vdvcoder\\Geocode": "src/"
         }
     },
     "minimum-stability": "stable",
