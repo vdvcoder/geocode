@@ -1,5 +1,5 @@
 <?php
-namespace Jcf\Geocode\Facades;
+namespace Vdvcoder\Geocode\Facades;
 
 use Illuminate\Support\Facades\Facade;
 
