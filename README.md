@@ -1,6 +1,6 @@
 # Google Geocoding API for Laravel
 
-[![Latest Stable Version](https://poser.pugx.org/jcf/geocode/v/stable.svg)](https://packagist.org/packages/jcf/geocode) [![Total Downloads](https://poser.pugx.org/jcf/geocode/downloads.svg)](https://packagist.org/packages/jcf/geocode) [![License](https://poser.pugx.org/jcf/geocode/license.svg)](https://packagist.org/packages/jcf/geocode)
+[![Latest Stable Version](https://poser.pugx.org/vdvcoder/geocode/v/stable.svg)](https://packagist.org/packages/vdvcoder/geocode) [![Total Downloads](https://poser.pugx.org/vdvcoder/geocode/downloads.svg)](https://packagist.org/packages/vdvcoder/geocode) [![License](https://poser.pugx.org/vdvcoder/geocode/license.svg)](https://packagist.org/packages/vdvcoder/geocode) [![PHP Version Require](http://poser.pugx.org/vdvcoder/geocode/require/php)](https://packagist.org/packages/vdvcoder/geocode)
 
 A simple [Laravel](http://laravel.com/) service provider for Google Geocoding API.
 
@@ -11,52 +11,7 @@ This package can be installed via [Composer](http://getcomposer.org).
 Run composer require command.
 
 ```sh
-composer require "jcf/geocode":"~1.3"
-```
-
-### Laravel 5.5
-
-Both the service provider and alias will be automatically installed by Laravel 5.5 package discovery. If you don't use auto discovery, follow the instructions for Laravel 5.0-5.4 below:
-
-### Laravel 5.0-5.4
-
-After updating composer, add the service provider to the providers array in app/config/app.php
-
-```php
-Vdvcoder\Geocode\GeocodeServiceProvider::class,
-```
-Add then alias Geocode adding its facade to the aliases array in the same file :
-
-```php
-'Geocode' => Vdvcoder\Geocode\Facades\Geocode::class,
-```
-
-### Laravel 4
-
-After updating composer, add the service provider to the providers array in app/config/app.php
-
-```php
-'Vdvcoder\Geocode\GeocodeServiceProvider',
-```
-Add then alias Geocode adding its facade to the aliases array in the same file :
-
-```php
-'Geocode' => 'Vdvcoder\Geocode\Facades\Geocode'
-```
-
-### Lumen 5
-
-After updating composer, register the service provider in bootstrap/app.php
-
-```php
-$app->register(Vdvcoder\Geocode\GeocodeServiceProvider::class);
-```
-
-Since facade are not enabled by default on Lumen, don't forget to add this.
-
-```php
-use Vdvcoder\Geocode\Geocode;
-
+composer require vdvcoder/geocode
 ```
 
 ## Configuration
